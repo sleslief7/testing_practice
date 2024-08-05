@@ -1,13 +1,13 @@
 const caesarCipher = require('./caesarCipher.js');
 
-test('add two numbers', () => {
+test('encrypt "xyz"', () => {
   expect(caesarCipher('xyz', 3)).toBe('abc');
 });
 
-test('add two numbers', () => {
+test('encrypt "HeLLo"', () => {
   expect(caesarCipher('HeLLo', 3)).toBe('KhOOr');
 });
 
-test('add two numbers', () => {
+test('encrypt "Hello, World!"', () => {
   expect(caesarCipher('Hello, World!', 3)).toBe('Khoor, Zruog!');
 });
